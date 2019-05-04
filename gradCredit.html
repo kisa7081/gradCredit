@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Promises, Promises</title>
+    <meta charset='utf-8' />
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='stylesheets/style.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='js/script.js'></script>
+</head>
+
+<body class="mt-4">
+    <div class="alert-light">
+        <header>
+            <h1 id='title' class="alert-danger border-top border-bottom border-dark">
+                How to Make a Promise
+                <br>
+                (and Keep It)
+            </h1>
+            <p id='info' class="alert-success border-top border-bottom border-dark">
+                Below are examples of events as they unfold waiting on a 3 second timer with and without a promise. On the left, a 3 second timer is started and the contents of the second div is updated.  After the timer completes, the first div is updated. On the right, a promise is used to delay updating the second div until the timer completes and first div is updated.
+            </p>
+        </header>
+
+        <div class="container ">
+            <div class="row border-top border-bottom border-dark font-weight-bold">
+                <div id="noPromDiv1" class="col border-right border-dark">
+
+                </div>
+                <div id="noPromDiv2" class="col border-right border-dark ">
+
+                </div>
+                <div class="col">
+                    <button id="clearButton" class="btn btn-danger border border-dark mt-1">Reset Page</button>
+                </div>
+                <div id="promDiv1" class="col border-left border-right border-dark ">
+
+                </div>
+                <div id="promDiv2" class="col ">
+
+                </div>
+            </div>
+            <div class="row alert-light">
+                <div class="col">
+                    <div id="countDiv1" class="font-weight-bold">Count: 0</div>
+                    <button id="noPromButton" class="btn btn-primary m-1">Without Promise</button>
+                    <div id="count1"></div>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <div id="countDiv2" class="font-weight-bold">Count: 0</div>
+                    <button id="promButton" class="btn btn-primary m-1">With a Promise</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
